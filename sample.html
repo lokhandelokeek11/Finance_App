@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance App</title>
+    <link rel="stylesheet" href="sample.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Finance App</h1>
+        
+        <div class="grid">
+            <div class="card">
+                <h2>Add Pending Bill</h2>
+                <div class="card-content">
+                    <label for="billName">Bill Name</label>
+                    <input id="billName" type="text">
+                    <label for="billAmount">Amount (₹)</label>
+                    <input id="billAmount" type="number">
+                    <label for="billDueDate">Due Date</label>
+                    <input id="billDueDate" type="date">
+                    <button id="addBillBtn">Add Bill</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Complete Bill Payment</h2>
+                <div class="card-content" id="completeBillContent">
+                    <p>No pending bills</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <h2>Pending Bills Queue</h2>
+                <div class="card-content" id="pendingBillsQueue"></div>
+            </div>
+
+            <div class="card">
+                <h2>Transaction History</h2>
+                <div class="card-content" id="transactionHistory"></div>
+            </div>
+        </div>
+    </div>
+    <script src="sample.js"></script>
+</body>
+</html>
